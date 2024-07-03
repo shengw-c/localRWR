@@ -19,10 +19,10 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: Ubuntu 22.04.4 LTS
     strategy:
       matrix:
-        r-version: ['3.6.3', '4.1.1']
+        r-version: ['4.4.0']
 
     steps:
       - uses: actions/checkout@v4
