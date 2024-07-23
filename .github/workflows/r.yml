@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: Ubuntu 22.04.4 LTS
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         r-version: ['4.4.0']
