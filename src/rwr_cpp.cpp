@@ -83,8 +83,9 @@ List rwr_cpp(NumericMatrix adj_mat,
   double prevNorm = F.norm();
   bool converged = false;
   
+  MatrixXd W_p_t = W_p.transpose();
   for (int i = 0; i < num_iter; ++i) {
-    VectorXd newF = (W_p.transpose() * F) + restart_term; 
+    VectorXd newF = (W_p_t * F) + restart_term; 
     double currentNorm = newF.norm(); 
     
     if (std::abs(currentNorm - prevNorm) < delta) {
