@@ -1,11 +1,15 @@
 Package: localRWR
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
-Version: 1.0
-Date: 2024-07-03
-Author: Your Name
-Maintainer: Your Name <your@email.com>
-Description: One paragraph description of what the package does as one or more full sentences.
+Title: Local Random Walk with Restart
+Version: 0.1
+Date: 2024-09-25
+Author: Sheng
+Maintainer: Sheng <sheng@email>
+Description: Implementation of RWR, which is capable of running step-wise propagation, and normalizing the adjacency matrix row-/column-wisely.
 License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.12)
+Imports: 
+    cachem,
+    memoise,
+    Rcpp (>= 1.0.12)
 LinkingTo: Rcpp, RcppArmadillo, RcppEigen, RcppProgress
+RoxygenNote: 7.3.2
